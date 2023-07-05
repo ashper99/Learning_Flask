@@ -21,8 +21,6 @@ app = Flask(__name__) # way to always start.  finds files
 #striptags strips html tags
 
 
-
-
 def index():
 	my_name = "Chris"
 	stuff = "This is <strong>Bold</strong> Text"
@@ -51,3 +49,5 @@ def page_not_found(e):
 @app.errorhandler(500)
 def page_not_found(e):
 	return render_template("500.html"), 500
+
+
